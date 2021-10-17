@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyphonenumber"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="x"
+        android:textColor="@color/black"
+        android:id="@+id/backbutton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logos">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/uberlogo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Uber"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:fontFamily="@font/ralewaybold"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Code has been sent to"
+            android:fontFamily="@font/ralewaybold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+923345019448"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ralewaybold"
+            android:textSize="20dp"
+            android:id="@+id/phonenumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ralewaybold"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:itemBackground="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/purple_200"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="5dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/white"
+            app:lineWidth="2dp"
+            app:viewType="rectangle"
+            android:layout_gravity="center"
+            android:id="@+id/otp"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#363636"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:id="@+id/verify"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend Code"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ralewaybold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:id="@+id/resendcode"
+            android:onClick="resendcode"
+            />
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

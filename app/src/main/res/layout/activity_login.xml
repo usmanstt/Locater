@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/background"
+    android:id="@+id/mainlayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logos">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/uberlogo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Locater"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:fontFamily="@font/ralewaybold"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logos"
+        android:paddingTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Phone Number"
+            android:inputType="phone"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#363636"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:id="@+id/login"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

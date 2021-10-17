@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personalinfo"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="x"
+        android:textColor="@color/black"
+        android:id="@+id/backbutton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logos">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/uberlogo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Personal Information"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/ralewaybold"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableLeft="@drawable/baseline_perm_identity_24"
+            android:padding="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableLeft="@drawable/baseline_mail_24"
+            android:padding="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:padding="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Phone"
+            android:id="@+id/phone"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#363636"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:id="@+id/saveinfo"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
